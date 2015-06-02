@@ -9,6 +9,7 @@
     <string name="action_settings">Settings</string>
     <string name="app_name">OnePlusSMSTask</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_contacts">ContactsActivity</string>
     <!-- From: file:/E:/AndroidStudio/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">

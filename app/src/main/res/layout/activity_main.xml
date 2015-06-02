@@ -3,6 +3,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <EditText
+        android:id="@+id/recipient"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:autoText="true"
+        android:hint="Enter Reciepient"
+        android:inputType="phone"/>
+
     <RelativeLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
@@ -17,7 +25,7 @@
             android:layout_alignParentBottom="true"
             android:layout_toLeftOf="@+id/SendButton"
             android:autoText="true"
-            android:hint="type message" />
+            android:hint="Type message" />
 
         <Button
             android:id="@+id/SendButton"
@@ -25,18 +33,19 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:text="Send"/>
+            android:text="Send" />
 
         <ListView
             android:id="@+id/messagesContainer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_above="@+id/message"
             android:layout_alignParentLeft="false"
             android:layout_alignParentTop="false"
             android:layout_marginBottom="10dp"
-            android:layout_above="@+id/message"
+            android:divider="@null"
             android:listSelector="@android:color/transparent"
-            android:transcriptMode="alwaysScroll"
-            android:divider="@null" />
+            android:transcriptMode="alwaysScroll" />
+
     </RelativeLayout>
 </LinearLayout>
